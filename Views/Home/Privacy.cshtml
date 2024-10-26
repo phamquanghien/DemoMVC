@@ -1,0 +1,8 @@
+﻿dotnet aspnet-codegenerator controller -name StudentController -m Student -dc DemoMvc.Data.ApplicationDbContext --relativeFolderPath Controllers --useDefaultLayout --referenceScriptLibraries --databaseProvider sqlite
+
+dotnet ef migrations add Migration_NOTE
+dotnet ef database update
+
+1. Cấu hình kết nối tới CSDL (sinh code tự động)
+2. Sử dụng Code first để tạo và quản lý cơ sở dữ liệu
+3. Chạy thực thi mã CRUD
